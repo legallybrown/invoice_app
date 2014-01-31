@@ -1,13 +1,19 @@
-<div>
-  <h1>List of Invoices</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>List of Invoice numbers with amounts outstanding</h1>
 
-    <% @invoices.each do |i| %>
+              <% @invoices.each do |i| %>
 
-      <%= i.invoice_id %>
+              <ul>
+                <li><%= i.invoice_id %></li>
+              </ul>
 
-      <br>
+              <br>
 
-    <% end %>
+              <% end %>
+        </div>
+    </div>
 </div>
 
 
