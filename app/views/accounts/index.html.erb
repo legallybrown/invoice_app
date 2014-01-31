@@ -1,0 +1,13 @@
+<h1>List of Available Bank Accounts</h1>
+
+<p>There are <%= @accounts.count %> accounts available: </p>
+
+<% @accounts.each do |account| %>
+
+<ul>
+  <li>Account Name: <%= account.name %> ("<%=account.currency_code %>")</li>
+  <li>Account Number: <%= account.bank_account_number%></li>
+
+</ul>
+
+<% end %> 

@@ -1,0 +1,31 @@
+<div class"container">
+    <div class="row">
+      <div class="span12" id="header">Listing all Contact in the Database</div>
+    </div>
+    <div id="main-container">
+        <div class="row-fluid">
+          <div class="span12" id="main-content">
+
+              <% @contacts.each do |contact| %>
+
+            <div class="table-responsive">
+              <table class="table table-striped">
+                  <tr>
+                    <th>Contact Name</th>
+                    <th>Email</th>
+                    <th>Bank Account Details</th>
+                  </tr>
+                    <td><%= contact.name %></td>
+                    <td> <%= contact.email_address %></td>
+                    <td><%= contact.bank_account_details %></td>
+              </table> 
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+  <% end %> 
+
+
+

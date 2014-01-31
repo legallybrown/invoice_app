@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xero API Tool</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="/">Xero API Tool</a> 
+            </li>
+            <li>
+                 <a  href="/users">Contacts</a> 
+            </li>
+            <li>
+                 <a  href="/invoices">Invoices</a>
+            </li>
+            <li>
+                 <a  href="/accounts">Bank Accounts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</nav>
+
+<body>
+
+<%= yield %>
+
+</body>
+</html>
